@@ -3,12 +3,13 @@ use yii\helpers\Html; //เรียกใช้ตัวช่วยจาก�
 /* @var $this yii\web\View */
 $this->title = 'INDED KMITL';
 ?>
-
+<div class="site-index well well-material">
 <?php
 $route1 = Yii::$app->urlManager->createUrl('test/test1');
 ?>
 <a href="<?= $route1 ?>">ไปที่ test1</a>
 <br>
+
 <?php
 $route2 = Yii::$app->urlManager->createUrl(['test/test2', 'name' => 'kobkiat', 'lname' => 'Chinpark']); //ส่งค่าจาก view ไปยัง controller ละส่งไปยัง action
 ?>
@@ -17,5 +18,10 @@ $route2 = Yii::$app->urlManager->createUrl(['test/test2', 'name' => 'kobkiat', '
 
 <?=
 Html::a('ลิ้งค์แบบที่ 3 ใช้ yii', ['test/test1', /*'a' => '1'*/]);
+?>
+</div>
+
+<?php
+   // Yii::$app->db->open();
 ?>
 

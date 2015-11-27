@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class MaterialAsset extends AssetBundle
+class MaterialAsset extends AssetBundle //ตัวดึงไฟล์ธีม css,js
 {
     public $sourcePath = '@themes/material';
     public $baseUrl = '@web';
